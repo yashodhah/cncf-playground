@@ -1,0 +1,17 @@
+= CNCF Playground
+This project is dedicated to exploring, experimenting with, and gaining hands-on experience with various Cloud Native Computing Foundation (CNCF) graduated and incubating projects.
+
+== Objectives
+
+- Gain practical experience with CNCF technologies.
+- Evaluate the strengths and limitations of different CNCF projects.
+- Explore use cases and experiment with configurations that align with real-world scenarios.
+
+== Projects Explored
+
+This repository contains separate folders for each CNCF project. Here is a list of projects explored so far:
+
+- *Kubernetes* - Container orchestration platform.
+- *Prometheus* - Monitoring and alerting toolkit.
+- *Helm* - Kubernetes package manager.
+
