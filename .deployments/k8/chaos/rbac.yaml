@@ -1,15 +1,14 @@
 kind: ServiceAccount
 apiVersion: v1
 metadata:
-  namespace: default
-  name: account-default-manager-uyxsh
+  namespace: hlab
+  name: account-cluster-manager-rxanv
 
 ---
-kind: Role
+kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  namespace: default
-  name: role-default-manager-uyxsh
+  name: role-cluster-manager-rxanv
 rules:
   - apiGroups: [""]
     resources: ["pods", "namespaces"]
@@ -20,15 +19,14 @@ rules:
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRoleBinding
 metadata:
-  name: bind-default-manager-uyxsh
-  namespace: default
+  name: bind-cluster-manager-rxanv
 subjects:
   - kind: ServiceAccount
-    name: account-default-manager-uyxsh
-    namespace: default
+    name: account-cluster-manager-rxanv
+    namespace: hlab
 roleRef:
-  kind: Role
-  name: role-default-manager-uyxsh
+  kind: ClusterRole
+  name: role-cluster-manager-rxanv
   apiGroup: rbac.authorization.k8s.io
