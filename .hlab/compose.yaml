@@ -1,0 +1,8 @@
+services:
+  artillery:
+    image: artilleryio/artillery:latest
+    volumes:
+      - .:/scripts
+    command: ["run", "/scripts/test_script.yaml"]
+    working_dir: /scripts
+    tty: true

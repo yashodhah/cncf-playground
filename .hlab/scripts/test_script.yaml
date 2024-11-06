@@ -1,0 +1,5 @@
+config:
+  target: 'https://staging.example.com'
+  phases:
+    - duration: 300
+      arrivalRate: 50
